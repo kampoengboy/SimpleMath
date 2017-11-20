@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_pembilang1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Pembilang 1" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_penyebut1"
+        android:layout_below="@+id/txt_pembilang1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Penyebut 1" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_pembilang2"
+        android:layout_below="@+id/txt_penyebut1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Pembilang 2" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_penyebut2"
+        android:layout_below="@+id/txt_pembilang2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Penyebut 2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtview_result"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_penyebut2" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Hitungan"
+        android:id="@+id/btn_plus"
+        android:layout_below="@+id/txtview_result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btn_plus"
+        android:layout_below="@+id/txtview_result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btn_minus"
+        android:layout_below="@+id/txtview_result"
+        android:layout_toRightOf="@+id/btn_plus"
+        android:layout_toEndOf="@+id/btn_plus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/btn_times"
+        android:layout_above="@+id/btn_carahitung"
+        android:layout_toRightOf="@+id/btn_minus"
+        android:layout_toEndOf="@+id/btn_minus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/btn_divide"
+        android:layout_below="@+id/txtview_result"
+        android:layout_toRightOf="@+id/btn_times"
+        android:layout_toEndOf="@+id/btn_times" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Cara Perhitungan"
+        android:id="@+id/btn_carahitung"
+        android:enabled="false"
+        android:layout_below="@+id/btn_plus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Cara Bagi"
+        android:id="@+id/btn_carabagi"
+        android:enabled="false"
+        android:layout_alignTop="@+id/btn_carahitung"
+        android:layout_toRightOf="@+id/btn_carahitung"
+        android:layout_toEndOf="@+id/btn_carahitung" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/btn_clear"
+        android:layout_below="@+id/btn_carabagi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:enabled="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cara Hitung"
+        android:id="@+id/chk_carahitung"
+        android:layout_below="@+id/btn_clear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:enabled="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cara Bagi"
+        android:id="@+id/chk_carabagi"
+        android:layout_alignTop="@+id/chk_carahitung"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:enabled="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_waktu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:enabled="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Video"
+        android:id="@+id/btn_video"
+        android:layout_above="@+id/btn_waktu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

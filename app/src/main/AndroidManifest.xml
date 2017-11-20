@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kolexia.www.simplemath" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityHitungan"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.kolexia.www.simplemath.ActivityHitungan" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogViewPager"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.kolexia.www.simplemath.DialogViewPager" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name=".ActivityViewPager"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.kolexia.www.simplemath.ActivityViewPager" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".ActivityPecahan"
+            android:label="@string/title_activity_activity_pecahan" >
+            <intent-filter>
+                <action android:name="com.kolexia.www.simplemath.ActivityPecahan" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentCara"
+            android:label="@string/title_activity_fragment_cara" >
+        </activity>
+        <activity
+            android:name=".activity_cara"
+            android:label="@string/title_activity_activity_cara" >
+        </activity>
+        <activity
+            android:name=".ActivityCara"
+            android:label="@string/title_activity_activity_cara" >
+        </activity>
+        <activity android:name=".FragmentHitungan" >
+        </activity>
+    </application>
+
+</manifest>

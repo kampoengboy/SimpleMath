@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_list_fragment"
+    tools:context="com.kolexia.www.simplemath.ListFragment"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:id="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List 1"
+        android:id="@+id/chk_list1"
+        android:checked="false"
+        android:enabled="false"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List 2"
+        android:id="@+id/chk_list2"
+        android:checked="false"
+        android:enabled="false"
+        android:layout_weight="23.27"
+        android:layout_below="@+id/chk_list1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List 3"
+        android:id="@+id/chk_list3"
+        android:checked="false"
+        android:enabled="false"
+        android:layout_below="@+id/chk_list2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List 4"
+        android:id="@+id/chk_list4"
+        android:checked="false"
+        android:enabled="false"
+
+        android:layout_below="@+id/chk_list3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
